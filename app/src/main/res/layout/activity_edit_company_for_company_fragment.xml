@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditCompanyActivityForCompanyFrag"
+    android:background="@drawable/back_ground"
+    >
+
+    <TextView
+        android:id="@+id/compEdit_tvNumber"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/material_dynamic_neutral_variant90"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/compEdit_textView"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compEdit_textView" />
+
+    <EditText
+        android:id="@+id/compEdit_etEmail"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="116dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/material_dynamic_neutral_variant90"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/compEdit_textView"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/compEdit_textView"
+        app:layout_constraintTop_toBottomOf="@+id/compEdit_textView" />
+
+
+    <TextView
+        android:id="@+id/compEdit_tvName"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/material_dynamic_neutral_variant90"
+        android:ems="10"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="@+id/compEdit_textView"
+        app:layout_constraintTop_toBottomOf="@+id/compEdit_textView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/material_dynamic_neutral_variant90"
+        android:hint="Enter Password..."
+        app:layout_constraintEnd_toEndOf="@+id/compEdit_etEmail"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/compEdit_etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/compEdit_etEmail"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/compEdit_etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ems="20"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/compEdit_textView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="cursive"
+        android:shadowColor="#B95BFE"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="8"
+        android:text="Edit Company :"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textIsSelectable="true"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <ImageButton
+        android:id="@+id/compEdit_btnSave"
+        android:layout_width="108dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="140dp"
+        android:layout_weight="1"
+        android:background="@drawable/cancel"
+        android:scaleType="fitCenter"
+        android:src="@drawable/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <ImageButton
+        android:id="@+id/compEdit_btnCancel"
+        android:layout_width="112dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="132dp"
+        android:background="@android:drawable/btn_radio"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toEndOf="@+id/compEdit_btnSave"
+        app:layout_constraintTop_toTopOf="@+id/compEdit_btnSave"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

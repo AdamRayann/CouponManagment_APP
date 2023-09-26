@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_comp"
+    tools:context=".CustomerActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/customerActivity_FragContainer">
+
+        <ImageButton
+            android:id="@+id/customerActivity_btnMyCoupons"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:background="#21BFFA"
+            android:scaleType="fitCenter"
+            android:src="@drawable/my_coupons_icon" />
+
+        <ImageButton
+            android:id="@+id/customerActivity_btnBuyCoupon"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#21BFFA"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add_coupon_icon"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/customerActivity_FragContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_ground_comp"
+        app:layout_constraintBottom_toTopOf="@+id/CustomerActivity_BtnExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CustomerActivity_BtnExit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:background="#FE9693"
+        android:text="EXIT"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerActivity_FragContainer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

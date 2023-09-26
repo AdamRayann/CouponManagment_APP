@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="163dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragCust_lvLine_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:descendantFocusability="blocksDescendants"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/fragCust_LVline_id"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/fragCust_LVline_email"
+            app:layout_constraintTop_toBottomOf="@+id/fragCust_LVline_email"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/fragCust_LVline_FirstName"
+            android:layout_width="190dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragCust_LVline_LastName"
+            android:layout_width="190dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/fragCust_LVline_FirstName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragCust_LVline_email"
+            android:layout_width="387dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fragCust_LVline_FirstName"
+            app:layout_constraintTop_toBottomOf="@+id/fragCust_LVline_FirstName" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            android:layout_width="260dp"
+            android:layout_height="48dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant90"
+            app:layout_constraintBottom_toBottomOf="@+id/fragCust_LVline_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toEndOf="@+id/fragCust_LVline_id"
+            app:layout_constraintTop_toTopOf="@+id/fragCust_LVline_id"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/fragCust_LVline_Password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:cursorVisible="false"
+                android:ems="20"
+                android:includeFontPadding="false"
+                android:inputType="textPassword"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

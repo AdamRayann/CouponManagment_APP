@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="310dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myCoupons_lvLine_constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="310dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/myCoupons_endDateTV"
+            android:layout_width="192dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/myCoupons_priceTV"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toEndOf="@+id/myCoupons_startDateTV"
+            app:layout_constraintTop_toBottomOf="@+id/myCoupons_priceTV" />
+
+        <TextView
+            android:id="@+id/myCoupons_startDateTV"
+            android:layout_width="192dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/myCoupons_categoryTV"
+            app:layout_constraintTop_toBottomOf="@+id/myCoupons_categoryTV" />
+
+        <TextView
+            android:id="@+id/myCoupons_descTV"
+            android:layout_width="393dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myCoupons_startDateTV"
+            app:layout_constraintVertical_bias="0.111" />
+
+        <TextView
+            android:id="@+id/myCoupons_titleTV"
+            android:layout_width="188dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.968"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/myCoupons_IdTV"
+            android:layout_width="192dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myCoupons_ivImage" />
+
+        <TextView
+            android:id="@+id/myCoupons_categoryTV"
+            android:layout_width="192dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/myCoupons_IdTV"
+            app:layout_constraintTop_toBottomOf="@+id/myCoupons_IdTV" />
+
+
+        <TextView
+            android:id="@+id/myCoupons_priceTV"
+            android:layout_width="192dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/myCoupons_companyIdTV"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/myCoupons_categoryTV"
+            app:layout_constraintTop_toBottomOf="@+id/myCoupons_companyIdTV" />
+
+        <TextView
+            android:id="@+id/myCoupons_companyIdTV"
+            android:layout_width="192dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/myCoupons_titleTV"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/myCoupons_IdTV"
+            app:layout_constraintTop_toBottomOf="@+id/myCoupons_titleTV" />
+
+        <ImageView
+            android:id="@+id/myCoupons_ivImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/myCoupons_titleTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/abstract_feather" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

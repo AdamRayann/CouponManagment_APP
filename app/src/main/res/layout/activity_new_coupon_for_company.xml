@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewCouponForCompanyActivity"
+    android:background="@drawable/back_ground_comp">
+
+    <ImageView
+        android:id="@+id/CompanyForCoupon_IVimage"
+        android:layout_width="211dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/picture_frame"
+        app:layout_constraintEnd_toEndOf="@+id/CompanyForCoupon_tvDes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CompanyForCoupon_tvDes"
+        app:layout_constraintTop_toBottomOf="@+id/CompanyForCoupon_tvDes" />
+
+    <EditText
+        android:id="@+id/CompanyForCoupon_tvAmount"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/material_dynamic_neutral_variant90"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/newcomp_textView3"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="@+id/newcomp_textView3"
+        app:layout_constraintTop_toBottomOf="@+id/newcomp_textView3" />
+
+    <EditText
+        android:id="@+id/CompanyForCoupon_tvPrice"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/material_dynamic_neutral_variant90"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/newcomp_textView3"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="@+id/newcomp_textView3"
+        app:layout_constraintTop_toBottomOf="@+id/newcomp_textView3" />
+
+    <ImageButton
+        android:id="@+id/CompanyForCoupon_ImCancel"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="28dp"
+        android:background="@null"
+        android:contentDescription="@android:string/cancel"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/CompanyForCoupon_IbtnSave"
+        app:layout_constraintTop_toBottomOf="@+id/CompanyForCoupon_IVimage"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/CompanyForCoupon_IbtnSave"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:contentDescription="@android:string/unknownName"
+        android:scaleType="fitCenter"
+        android:src="@drawable/save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CompanyForCoupon_IVimage" />
+
+    <TextView
+        android:id="@+id/newcomp_textView3"
+        android:layout_width="351dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:elegantTextHeight="true"
+        android:fontFamily="cursive"
+        android:shadowColor="#E2E7E7"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="8"
+        android:text="Add New Coupon"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textIsSelectable="true"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/CompanyForCoupon_tvDes"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="324dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/material_dynamic_neutral_variant90"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/CompanyForCoupon_tvTitle"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/material_dynamic_neutral_variant90"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CompanyForCoupon_spCategory" />
+
+    <ImageButton
+        android:id="@+id/CompanyForCoupon_btnChooseImage"
+        android:layout_width="81dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="312dp"
+        android:contentDescription="@android:string/unknownName"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:text="Choose image"
+        app:layout_constraintEnd_toEndOf="@+id/newcomp_textView3"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="@+id/newcomp_textView3"
+        app:layout_constraintTop_toBottomOf="@+id/newcomp_textView3" />
+
+    <Spinner
+        android:id="@+id/CompanyForCoupon_spCategory"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="172dp"
+        android:background="#DBE2E8"
+        app:layout_constraintEnd_toEndOf="@+id/newcomp_textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/CompanyForCoupon_tvStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/newcomp_textView3" />
+
+    <TextView
+        android:id="@+id/CompanyForCoupon_tvStartDate"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:background="#DBE2E8"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="Start Date"
+        android:inputType="date"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/newcomp_textView3"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="@+id/newcomp_textView3"
+        app:layout_constraintTop_toBottomOf="@+id/newcomp_textView3" />
+
+    <TextView
+        android:id="@+id/CompanyForCoupon_tvEndDate"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:background="#DBE2E8"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="End Date"
+        android:inputType="date"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/newcomp_textView3"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="@+id/newcomp_textView3"
+        app:layout_constraintTop_toBottomOf="@+id/newcomp_textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

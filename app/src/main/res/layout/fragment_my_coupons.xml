@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_comp"
+    >
+
+    <TextView
+        android:id="@+id/myCouponFrag_tvTitle"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="My Coupons"
+        android:textColor="#333131"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/myCouponFrag__lvMyCoupons"
+        app:layout_constraintTop_toBottomOf="@+id/myCouponFrag_tvTitle">
+
+        <TextView
+            android:id="@+id/myCouponFrag_tvFilterBy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Filter By: "
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/myCouponFrag_etMaxPrice"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:hint="Max Price Filter"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <Spinner
+            android:id="@+id/myCouponFrag_sbCouponCategory"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#000000" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/myCouponFrag__lvMyCoupons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_ground_comp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

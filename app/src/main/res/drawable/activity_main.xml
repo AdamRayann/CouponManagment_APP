@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        app:backgroundTint="#C3F0F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab_alarm"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/add_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_fab"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/add_fab"
+        app:srcCompat="@drawable/alarm" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab_person"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/add_fab_alarm"
+        app:layout_constraintEnd_toEndOf="@+id/add_fab_alarm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/add_fab_alarm"
+        app:srcCompat="@drawable/add_person" />
+
+    <TextView
+        android:id="@+id/add_fab_alarm_text"
+        android:layout_width="83dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="12dp"
+        android:text="Add Alarm"
+        app:layout_constraintBottom_toBottomOf="@+id/add_fab_alarm"
+        app:layout_constraintEnd_toStartOf="@+id/add_fab_alarm"
+        app:layout_constraintTop_toTopOf="@+id/add_fab_alarm" />
+
+    <TextView
+        android:id="@+id/add_fab_person_text"
+        android:layout_width="83dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="12dp"
+        android:text="Add Person"
+        app:layout_constraintBottom_toBottomOf="@+id/add_fab_person"
+        app:layout_constraintEnd_toStartOf="@+id/add_fab_person"
+        app:layout_constraintTop_toTopOf="@+id/add_fab_person"
+        app:layout_constraintVertical_bias="0.428" />
+</androidx.constraintlayout.widget.ConstraintLayout>

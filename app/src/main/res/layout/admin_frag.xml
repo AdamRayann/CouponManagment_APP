@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral95"
+    android:backgroundTint="#45D2FD"
+    tools:context=".AdminFrag">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="#45D2FD"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/adminActivity_FragContainer">
+
+        <ImageButton
+            android:id="@+id/adminActivity_btnCustomers"
+            android:layout_width="216dp"
+            android:layout_height="match_parent"
+            android:background="#45D3FE"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user" />
+
+        <ImageButton
+            android:id="@+id/adminActivity_btnCompanies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#45D2FD"
+            android:scaleType="fitCenter"
+            android:src="@drawable/company" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/adminActivity_FragContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back_ground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/more"
+            app:backgroundTint="#C3F0F1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:maxImageSize="39dp"
+            app:srcCompat="@drawable/more"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/return_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:clickable="true"
+            android:translationX="-2dp"
+            android:translationY="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/add_fab"
+            app:layout_constraintEnd_toEndOf="@+id/add_fab"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/add_fab"
+            app:maxImageSize="30dp"
+            app:srcCompat="@drawable/go_back" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_fab_person"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="25dp"
+            android:clickable="true"
+            android:foregroundGravity="center"
+            android:translationY="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/return_fab"
+            app:layout_constraintEnd_toEndOf="@+id/return_fab"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/return_fab"
+            app:srcCompat="@drawable/add_person" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_fab_company"
+            android:layout_width="58dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="true"
+            android:foregroundGravity="center"
+            android:textAlignment="center"
+            android:translationY="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/add_fab_person"
+            app:layout_constraintEnd_toEndOf="@+id/add_fab_person"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/add_fab_person"
+            app:maxImageSize="30dp"
+            app:srcCompat="@drawable/add_company" />
+
+        <TextView
+            android:id="@+id/add_fab_alarm_text"
+            android:layout_width="97dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Return"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:translationY="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/return_fab"
+            app:layout_constraintEnd_toStartOf="@+id/return_fab" />
+
+        <TextView
+            android:id="@+id/add_fab_person_text"
+            android:layout_width="94dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="48dp"
+            android:textAlignment="center"
+            android:text="Add Person"
+            android:textSize="16sp"
+            android:translationY="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/add_fab_alarm_text"
+            app:layout_constraintEnd_toStartOf="@+id/add_fab_person"
+            app:layout_constraintTop_toTopOf="@+id/add_fab_person"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/add_fab_company_text"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="24dp"
+            android:text="Add Company"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:translationY="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/add_fab_person_text"
+            app:layout_constraintEnd_toStartOf="@+id/add_fab_company" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

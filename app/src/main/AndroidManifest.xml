@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/coupons_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/coupons_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CouponManagmentAPP"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdminMainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminFrag"
+            android:exported="false" />
+        <activity
+            android:name=".CompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewCompanyActivityForCompanyFrag"
+            android:exported="false" />
+        <activity
+            android:name=".EditCompanyActivityForCompanyFrag"
+            android:exported="false" />
+        <activity
+            android:name=".NewUserActivityForCustomerFrag"
+            android:exported="false" />
+        <activity
+            android:name=".EditUserActivityForCustomerFrag"
+            android:exported="false" />
+        <activity
+            android:name=".EditCouponForCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewCouponForCompanyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

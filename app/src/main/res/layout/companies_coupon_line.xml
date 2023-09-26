@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="310dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/coupons_lvLine_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126">
+
+        <TextView
+            android:id="@+id/coupon_endDateTV"
+            android:layout_width="186dp"
+            android:layout_height="49dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/coupon_priceTV"
+            app:layout_constraintTop_toTopOf="@+id/coupon_startDateTV" />
+
+        <TextView
+            android:id="@+id/coupon_startDateTV"
+            android:layout_width="186dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/coupon_endDateTV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/coupon_categoryTV"
+            app:layout_constraintTop_toBottomOf="@+id/coupon_categoryTV" />
+
+        <TextView
+            android:id="@+id/coupon_desTV"
+            android:layout_width="375dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/coupon_startDateTV"
+            app:layout_constraintTop_toBottomOf="@+id/coupon_startDateTV"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/coupon_titleTV"
+            android:layout_width="185dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/coupon_IdTV"
+            android:layout_width="186dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coupon_ivImage" />
+
+        <TextView
+            android:id="@+id/coupon_categoryTV"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/coupon_amountTV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/coupon_IdTV"
+            app:layout_constraintTop_toBottomOf="@+id/coupon_IdTV" />
+
+        <TextView
+            android:id="@+id/coupon_amountTV"
+            android:layout_width="103dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="4dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/coupon_categoryTV"
+            app:layout_constraintEnd_toStartOf="@+id/coupon_priceTV"
+            app:layout_constraintTop_toTopOf="@+id/coupon_categoryTV" />
+
+        <TextView
+            android:id="@+id/coupon_priceTV"
+            android:layout_width="106dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/coupon_amountTV"
+            app:layout_constraintEnd_toEndOf="@+id/coupon_companyIdTV"
+            app:layout_constraintTop_toTopOf="@+id/coupon_amountTV" />
+
+        <TextView
+            android:id="@+id/coupon_companyIdTV"
+            android:layout_width="186dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:backgroundTint="@color/material_dynamic_neutral_variant95"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/coupon_titleTV"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/coupon_IdTV"
+            app:layout_constraintTop_toBottomOf="@+id/coupon_titleTV" />
+
+        <ImageView
+            android:id="@+id/coupon_ivImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="68dp"
+            app:layout_constraintEnd_toStartOf="@+id/coupon_titleTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/abstract_feather" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
